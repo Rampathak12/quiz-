@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="initial-screen" class="screen">
+        <h1>Welcome to the Quiz</h1>
+        <p>Test your knowledge of HTML, CSS, and JavaScript.</p>
+        <button id="start-btn" class="btn">Start Quiz</button>
+    </div>
+    
+    <div id="quiz-container" class="screen hidden">
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="answer-options"></div>
+        </div>
+        <button id="submit-btn" class="btn">Submit Answer</button>
+        <div id="feedback" class="hidden"></div>
+        <div id="score">Score: 0</div>
+        <div id="timer">Time: 30</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
